@@ -1,5 +1,4 @@
-// https://reqres.in/api/users?page=1
-
+// https://reqres.in/api/users
 export interface UsersResponse {
   page:        number;
   per_page:    number;
@@ -8,6 +7,13 @@ export interface UsersResponse {
   data:        User[];
   support:     Support;
 }
+
+// https://reqres.in/api/users/1
+export interface UserResponse {
+  data:    User;
+  support: Support;
+}
+
 
 export interface User {
   id:         number;
@@ -21,3 +27,5 @@ export interface Support {
   url:  string;
   text: string;
 }
+
+
