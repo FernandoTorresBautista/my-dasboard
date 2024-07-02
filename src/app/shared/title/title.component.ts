@@ -12,6 +12,6 @@ import { CommonModule } from '@angular/common';
 export class TitleComponent {
 
   @Input({ required: true}) title!: string;
-  // @Input({ transform: booleanAttribute }) withShadow: boolean = false;
+  @Input({ transform: booleanAttribute }) withShadow: boolean = false;
 
 }
